@@ -1,0 +1,66 @@
+{
+  "name": "bing-search",
+  "displayName": "bing-search",
+  "description": "Search your doubts using bing",
+  "version": "0.0.1",
+  "publisher": "kameshkotwani",
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "author": {
+    "name": "Kamesh Kotwani",
+    "url": "https://www.github.com/kameshkotwani"
+  },
+  "icon": "resources/icon.png",
+  "homepage": "https://www.github.com/kameshkotwani/bing-search",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/kameshkotwani/bing-search"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.bingSearch"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "extension.bingSearch",
+          "group": "navigation"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.bingSearch",
+        "title": "Bing Search"
+      }
+    ],
+    "configuration": {
+      "title": "Bing Search Config",
+      "type": "object",
+      "properties": {
+        "bingSearch.QueryTemplate": {
+          "type": "string",
+          "default": "https://www.bing.com/search?q=%SELECTION%",
+          "description": "Search Query"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28",
+    "eslint": "^5.13.0",
+    "@types/node": "^10.12.21",
+    "@types/mocha": "^2.2.42"
+  }
+}
