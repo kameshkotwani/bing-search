@@ -10,10 +10,10 @@ Simply select the word or function you want to search, then right click and clic
 # See it in Action
 #### when you select the text and right click you'll see `Bing Search` in your drop-down menu
 
-![drop-down-menu](resources/drop-down-menu.png)
+![drop-down-menu](https://github.com/kameshkotwani/bing-search/blob/master/resources/drop-down-menu.png)
 
 ## How it opens in browser
-![browser-query-results](resources/search-results.png)
+![browser-query-results](https://github.com/kameshkotwani/bing-search/blob/master/resources/search-results.png)
 
 ### If you encounter any issues, please let me know [here](https://github.com/kameshkotwani/bing-search/issues)
 
