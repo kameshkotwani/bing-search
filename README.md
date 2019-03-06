@@ -13,7 +13,9 @@ Simply select the word or function you want to search, then right click and clic
 ![drop-down-menu](https://github.com/kameshkotwani/bing-search/resources/drop-down-menu.png)
 
 ## How it opens in browser
+
 ![browser-query-results](https://github.com/kameshkotwani/bing-search/resources/search-results.png)
+
 
 ### If you encounter any issues, please let me know [here](https://github.com/kameshkotwani/bing-search/issues)
 
